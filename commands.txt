@@ -1,0 +1,5 @@
+docker build -t dockerwings0306/nginximage . 
+docker tag dockerwings0306/nginximage registry.hub.docker.com/dockerwings0306/nginximage:latest 
+docker push registry.hub.docker.com/dockerwings0306/nginximage:latest 
+The push refers to repository [registry.hub.docker.com/dockerwings0306/nginximage]
+
