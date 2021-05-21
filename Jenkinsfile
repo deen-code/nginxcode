@@ -7,7 +7,7 @@ node {
        def customImage = docker.build("nginximage")
          
         /* Push the container to the custom Registry */
-        customImage.push("${env.BUILD_NUMBER}")
-            customImage.push("latest")
+        
+            customImage.push()
     }
 }
