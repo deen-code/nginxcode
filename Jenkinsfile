@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('http://registry.hub.docker.com/repository/docker/dockerwings0306/wings', 'dockerHub') {
+    docker.withRegistry('http://registry.hub.docker.com/', 'dockerHub') {
 
         def customImage = docker.build("nginximage")
 
